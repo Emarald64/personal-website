@@ -1,40 +1,19 @@
-:root{
-    --primary-color:#f244a4;
-}
-body{
-    background-color:#121212;
-    color:white;
+@import url(all.css);
+
+#list-container{
+    height:64px;
 }
 
-.container{
-    border-color:gray;
-    border-width:5px;
-    border-style:solid;
-    border-radius: 25px;
-    padding:20px;
+.list-item{
+    font-size: 32px;
+    transition: transform 300ms;
     width:fit-content;
+    height:fit-content;
+    margin-left:100px;
+    align-self: center;
 }
 
-.linkIcon{
-    width:48px;
-    margin-right:5px;
-}
-
-a{
-    color:var(--primary-color);
-}
-
-footer{
-    background-color: #222;
-}
-
-.button{
-    background-color: var(--primary-color);
-    color:white;
-    width:fit-content;
-    border-radius: 30px;
-    padding:10px;
-    & > a{
-        color:white
-    }
+.list-item:hover{
+    transform: scale(1.5);
+    /* background-color: red; */
 }

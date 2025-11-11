@@ -1,0 +1,32 @@
+:root{
+    --primary-color:#f244a4;
+}
+body{
+    background-color:#121212;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.linkIcon{
+    width:48px;
+    margin-right:5px;
+}
+
+a{
+    color:var(--primary-color);
+}
+
+footer{
+    background-color: #222;
+}
+
+.button{
+    background-color: var(--primary-color);
+    color:white;
+    width:fit-content;
+    border-radius: 30px;
+    padding:10px;
+    & > a{
+        color:white
+    }
+}
