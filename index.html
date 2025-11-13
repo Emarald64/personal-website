@@ -2,18 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Home-Alexander Giller</title>
+        <title>Alexander Giller</title>
     </head>
     <body>
+        <h1>Alexander Giller</h1>
         <div id="main">
             <div id="list-container">
                 <div class="list-item"><a href="/about">About</a></div>
-                <!-- <div class="list-item"><a href="/projects">Projects</a></div> -->
+                <div class="list-item"><a href="#projects">Projects</a></div>
             </div>
-            <div id="image-container">
+            <div id="face-container">
                 <img id="myImage" src="/assets/me.png">
             </div>
         </div>
+        <br>
         <div id="photos">
             <img src="/assets/photos/_DSC2526.JPG">
             <img src="/assets/photos/PXL_20230505_005248850.jpg">
@@ -21,21 +23,70 @@
             <img src="/assets/photos/PXL_20250506_212506422.jpg">
             <img src="/assets/photos/PXL_20250823_173215959.jpg">
         </div>
+        <br>
+        <br>
 
-        <h2>My Games</h2>
-        <div class="container">
-            <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe>
-            <iframe frameborder="0" src="https://itch.io/embed/3984028?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/gravity-switcher">Gravity switcher by Xanderath</a></iframe>
-            <iframe frameborder="0" src="https://itch.io/embed/4021654?bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="552" height="167"><a href="https://xanderath.itch.io/connect-4">Connect 4 by Xanderath</a></iframe>
+        <h2 id="projects">Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img class="project-picture" style="image-rendering:crisp-edges;" src="/assets/the-climb.png">
+                <div class="project-description">
+                    <a href="https://xanderath.itch.io/the-climb"><h2>The Climb</h2></a>
+                    A difficult platformer game with a grappling hook inspired by Celeste.
+                    Built base game in 1 week for the 14th Brackeys Game Jam.
+                    <div class="project-links">
+                        <a href="https://xanderath.itch.io/the-climb"><img class="linkIcon" src="assets/itchio-logo-textless-white.svg"></a>
+                        <a href="https://github.com/Emarald64/brackeys-14"><img class="linkIcon" src="assets/github-mark-white.svg"></a>
+                    </div>
+                </div>
+                <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
+            </div>
+            <div class="project-box">
+                <img class="project-picture" src="/assets/gravity_switcher_cover.png">
+                <div class="project-description">
+                    <a href="https://xanderath.itch.io/gravity-switcher"><h2>Gravity Switcher</h2></a>
+                    A platformer where you switch gravity inspired by VVVVVV made for Hackclub siege
+
+                    <div class="project-links">
+                        <a href="https://xanderath.itch.io/gravity-switcher"><img class="linkIcon" src="assets/itchio-logo-textless-white.svg"></a>
+                        <a href="https://github.com/Emarald64/gravity-switcher"><img class="linkIcon" src="assets/github-mark-white.svg"></a>
+                    </div>
+                </div>
+                <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
+            </div>
+            <div class="project-box">
+                <img class="project-picture" src="/assets/connect-4.png">
+                <div class="project-description">
+                    <a href="https://xanderath.itch.io/connect-4"><h2>Connect 4</h2></a>
+                    Connect 4 but you get a bomb piece every 8 turns that clears a column
+                    <div class="project-links">
+                        <a href="https://xanderath.itch.io/connect-4"><img class="linkIcon" src="assets/itchio-logo-textless-white.svg"></a>
+                        <a href="https://github.com/Emarald64/brackeys-14"><img class="linkIcon" src="assets/github-mark-white.svg"></a>
+                    </div>
+                </div>
+                <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
+            </div>
+            <div class="project-box">
+                <img class="project-picture" style="image-rendering: crisp-edges;" src="/assets/scalar.png">
+                <div class="project-description">
+                    <a href="https://xanderath.itch.io/scalar"><h2>Scalar</h2></a>
+                    A platformer where you can resize the window to change the size of the player
+                    <div class="project-links">
+                        <a href="https://xanderath.itch.io/scalar"><img class="linkIcon" src="assets/itchio-logo-textless-white.svg"></a>
+                        <a href="https://github.com/Emarald64/scalar"><img class="linkIcon" src="assets/github-mark-white.svg"></a>
+                    </div>
+                </div>
+                <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
+            </div>
         </div>
-
+        <br>
         <footer>
             <p style="display:inline;">Contact:</p>
-            <div class="button" style="display: inline-block;"><a href="mailto:alexgiller@proton.me">alexgiller@proton.me</a></div>
+            <div class="button" style="display: inline-block;"><a href=" mailto:alexgiller@proton.me"><img src="/assets/email.svg">alexgiller@proton.me</a></div>
             <br>
-            <a href="xanderath.itch.io"><img class="linkIcon" src="assets/itchio-logo-textless-white.svg"></a>
+            <a href="https://xanderath.itch.io"><img class="linkIcon" src="assets/itchio-logo-textless-white.svg"></a>
             <a href="https://github.com/Emarald64"><img class="linkIcon" src="assets/github-mark-white.svg"></a>
-            <br>
+            <!-- <br> -->
     </footer>
     </body>
 </html>
