@@ -17,8 +17,17 @@
     align-items: center;
     justify-content: center;
     /* align-self: center; */
+}
 
-    
+.background-image{
+    opacity: 0.4;
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -100;
+    top:0;
+    /* bottom:0; */
 }
 
 .list-item:hover{
@@ -26,6 +35,15 @@
     /* margin-bottom:0; */
     /* margin-top:0;
     /* background-color: red; */
+}
+
+.about-conatiner{
+    background-color: #222;
+    border-radius: 40px;
+    border: 5px solid gray;
+    padding: 10px;
+    width:fit-content;
+    margin:30px;
 }
 
 #main{
@@ -42,6 +60,31 @@
     border-radius: 50%;
     overflow: hidden;
     /* margin: -30px 0 -30px 0; */
+}
+
+#main-links{
+    margin-left:30px;
+    height:220px;
+}
+
+.main-link{
+    font-size: 32px;
+    background-color: #222;
+    border: 5px solid cyan;
+    border-bottom-width: 15px;
+    border-bottom-color:magenta;
+    border-right-color:magenta;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 100ms;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    /* position:relative */
+}
+
+.main-link:hover{
+    margin-top: 20px;
+    border-bottom-width: 5px;
 }
 
 #photos{
@@ -73,6 +116,7 @@
     width:fit-content;
     position: relative;
     max-width:800px;
+    height:160px;
 }
 
 .project-description{
@@ -80,6 +124,9 @@
     border-left: 2px gray solid;
     text-wrap-mode: wrap;
     padding-left: 10px;
+    & > a{
+        color: #2dd
+    }
 }
 
 .project-links{
@@ -90,11 +137,15 @@
 
 .project-picture{
     width:210px;
-    height:166px;
     object-fit: contain;
 }
 
 h1{
     text-align: center;
+    font-size:50px;
 }
 
+h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
