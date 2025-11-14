@@ -65,26 +65,35 @@
 
 #main-links{
     margin-left:30px;
-    height:220px;
+    min-width: fit-content;
 }
 
-.main-link{
+.link-button-container{
+    height:85px;
+    vertical-align: bottom;
+    position:relative;
+    width:fit-content
+}
+
+.link-button{
     font-size: 32px;
     background-color: #222;
     border: 5px solid cyan;
     border-bottom-width: 15px;
-    border-bottom-color:magenta;
-    border-right-color:magenta;
+    border-bottom-color:var(--primary-color);
+    border-right-color:var(--primary-color);
     border-radius: 20px;
     padding: 5px;
     transition: 100ms;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    height: fit-content;
+    position:absolute;
+    bottom:0;
+    display: flex;
+    align-items: center;
     /* position:relative */
 }
 
-.main-link:hover{
-    margin-top: 20px;
+.link-button-container:hover > .link-button{
     border-bottom-width: 5px;
 }
 
