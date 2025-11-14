@@ -70,9 +70,9 @@
 
 .link-button-container{
     height:85px;
-    vertical-align: bottom;
-    position:relative;
-    width:fit-content
+    display: flex;
+    align-items: flex-end;
+    width:fit-content;
 }
 
 .link-button{
@@ -86,8 +86,6 @@
     padding: 5px;
     transition: 100ms;
     height: fit-content;
-    position:absolute;
-    bottom:0;
     display: flex;
     align-items: center;
     /* position:relative */
