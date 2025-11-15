@@ -164,7 +164,8 @@
 }
 
 .project-picture{
-    width:210px;
+    max-width:210px;
+    min-width:105px;
     max-height: 180px;
     object-fit: contain;
 }
