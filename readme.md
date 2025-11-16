@@ -2,8 +2,7 @@
 
 https://xanderath.org
 
-My personal website
-Made with just HTML and CSS
+My personal website with my links, projects, and dog.
 
 Made for hack club siege with the theme of space.
 
