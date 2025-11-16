@@ -32,15 +32,22 @@ footer{
     padding-left:40px;
 }
 
-.button{
+.email-button{
     background-color: var(--primary-color);
     color:white;
     width:fit-content;
     border-radius: 30px;
     padding:10px;
     text-align: center;
-    & > a{
-        line-height: 100%;
-        color:white
-    }
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1ch;
+}
+
+.contact-container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:1ch;
 }

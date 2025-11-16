@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <title>Alexander Giller</title>
-        <link rel="icon" type="image/x-icon" href="/assets/laugh.png">
+        <link rel="icon" type="image/x-icon" href="./assets/laugh.png">
     </head>
     <body>
-        <picture>
-            <source srcset="/assets/space.avif" type="image/avif">
-            <img src="/assets/54764951141_b7e2ea6e51_6k.jpg" class="background-image">
-        </picture>
+        <img src="./assets/54764951141_b7e2ea6e51_6k.jpg" class="background-image">
         <div id="content">
             <h1>Alexander Giller</h1>
             <div id="main">
+                <div id="face-container">
+                    <img id="myImage" src="./assets/me.png">
+                </div>
+
                 <div id="list-container">
                     <div class="list-item"><a href="#about">About</a></div>
                     <div class="list-item"><a href="#projects">Projects</a></div>
+                    <div class="list-item"><a href="#dog">My Dog</a></div>
                 </div>
-                <div id="face-container">
-                    <img id="myImage" src="/assets/me.png">
-                </div>
+                
                 <div id="main-links">
+                    <!-- Cool looking buttons -->
                     <a href="https://xanderath.itch.io">
                         <div class="link-button-container">
                             <dev class="link-button">
-                                <img class="linkIcon" src="assets/itchio-logo-textless-white.svg">
+                                <img class="linkIcon" src="./assets/itchio-logo-textless-white.svg">
                                 Itch.io
                             </dev>
                         </div>
@@ -33,7 +34,7 @@
                     <a href="https://github.com/Emarald64">
                         <div class="link-button-container">
                             <dev class="link-button">
-                                <img class="linkIcon" src="assets/github-mark-white.svg"> 
+                                <img class="linkIcon" src="./assets/github-mark-white.svg"> 
                                 Github
                             </dev>
                         </div>
@@ -42,13 +43,11 @@
             </div>
     
             <br>
-            <div id="photos">
-                <img title="He hungers" src="/assets/photos/PXL_20230505_005248850.jpg">
-                <img src="/assets/photos/PXL_20230915_205743546.jpg">
-                <img src="/assets/photos/PXL_20250823_173215959.jpg">
-                <img src="/assets/photos/_DSC2526.JPG">
-                <img src="/assets/photos/PXL_20250506_212506422.jpg">
-                <img src="/assets/photos/PXL_20250910_222047834.jpg">
+            <div class="photos">
+                <img src="./assets/photos/_DSC2526.JPG">
+                <img src="./assets/photos/PXL_20250506_212506422.jpg">
+                <img src="./assets/photos/PXL_20250910_222047834.jpg">
+                <!-- <img src="./assets/photos/PXL_20231202_153857803.jpg"> -->
             </div>
             <div style="display:flex; width:100%;">
                 <div class="about-conatiner">
@@ -60,12 +59,12 @@
                         <li>I have experience coding in <span style="color:#4B8BBE">Pyt</span><span style="color:#FFD43B">hon</span>, <span style="color:#e44d26">HTML</span>, <span style="color:rebeccapurple">CSS</span>, <span style="color:#F0DB4F">JS</span>, and <span style="color:#478cbf">Godot</span></li>
                     </ul>
                 </div>
-                <img id="meteor" src="/assets/meteor.svg">
+                <img id="meteor" src="./assets/meteor.svg">
             </div>
             <h2 id="projects">Projects:</h2>
             <div class="project-container">
                 <div class="project-box">
-                    <img class="project-picture" style="image-rendering:crisp-edges;" src="/assets/the-climb.png">
+                    <img class="project-picture" style="image-rendering:crisp-edges;" src="./assets/the-climb.png">
                     <div class="project-description">
                         <a href="https://xanderath.itch.io/the-climb"><h2>The Climb</h2></a>
                         A difficult platformer game with a grappling hook inspired by Celeste.
@@ -79,7 +78,7 @@
                     <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
                 </div>
                 <div class="project-box">
-                    <img class="project-picture" src="/assets/gravity_switcher_cover.png">
+                    <img class="project-picture" src="./assets/gravity_switcher_cover.png">
                     <div class="project-description">
                         <a href="https://xanderath.itch.io/gravity-switcher"><h2>Gravity Switcher</h2></a>
                         A platformer where you switch gravity inspired by VVVVVV.
@@ -93,7 +92,7 @@
                     <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
                 </div>
                 <div class="project-box">
-                    <img class="project-picture" src="/assets/connect-4.png">
+                    <img class="project-picture" src="./assets/connect-4.png">
                     <div class="project-description">
                         <a href="https://xanderath.itch.io/connect-4"><h2>Connect 4</h2></a>
                         Connect 4 but you get a bomb piece every 8 turns that clears a column.
@@ -107,7 +106,7 @@
                     <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
                 </div>
                 <div class="project-box">
-                    <img class="project-picture" style="image-rendering: crisp-edges;" src="/assets/scalar.png">
+                    <img class="project-picture" style="image-rendering: crisp-edges;" src="./assets/scalar.png">
                     <div class="project-description">
                         <a href="https://xanderath.itch.io/scalar"><h2>Scalar</h2></a>
                         A platformer where you can resize the window to change the size of the player. Made in 4 days for the GMTK Game Jam 2024.
@@ -119,7 +118,7 @@
                     <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
                 </div>
                 <div class="project-box">
-                    <img class="project-picture" style="object-fit: cover;" src="/assets/Screenshot 2025-11-13 at 08-55-17 Alexander Giller.png">
+                    <img class="project-picture" style="object-fit: cover;" src="./assets/Screenshot 2025-11-13 at 08-55-17 Alexander Giller.png">
                     <div class="project-description">
                         <a href="/"><h2>My Personal Website</h2></a>
                         You're looking at it right now! Made for Hack Club Siege with the theme of space.
@@ -131,12 +130,29 @@
                     <!-- <iframe frameborder="0" src="https://itch.io/embed/3842157?dark=true" width="552" height="167"><a href="https://xanderath.itch.io/the-climb">The Climb by Xanderath, Samik!</a></iframe> -->
                 </div>
             </div>
-        <br>
+
+            <div class="dog-container">
+                <h2 id="dog">My Dog:</h2>
+                <p>My dog's name is Fred and he is a 3 year old golden retiever. He always wants attention, especially when I am tryng to work. He likes to voice his complaints about not recieving enough attention by pushing my arms and whining</p>
+                <div class="photos">
+                    <img title="He hungers" src="./assets/photos/fred/PXL_20230505_005248850.jpg">
+                    <img title="Guilty" src="./assets/photos/fred/PXL_20250823_173215959.jpg">
+                    <img title="He can't do it any more" src="./assets/photos/fred/PXL_20230722_150323250.jpg">
+                    <img title="Plotting his revenge" src="./assets/photos/fred/PXL_20230915_205743546.jpg">
+                    <img title="Its his now, I can't have it" src="./assets/photos/fred/PXL_20230730_222428489.jpg">
+                    <img title="He'll figure it out" src="./assets/photos/fred/PXL_20230719_192808213.MP.jpg">
+                </div>
+            </div>
         </div>
         <footer>
-            <div>
-                <p style="display:inline;">Contact:</p>
-                <div class="button" style="display: inline-block;"><a href=" mailto:alexgiller@proton.me"><img src="/assets/email.svg">alexgiller@proton.me</a></div>
+            <div class="contact-container">
+                <span>Contact:</span>
+                <a href=" mailto:alexgiller@proton.me">
+                    <div class="email-button">
+                        <img src="/assets/email.svg">
+                        <span>alexgiller@proton.me</span>
+                    </div>
+                </a>
             </div>
             <p>Space background from <a href="https://www.flickr.com/photos/nasawebbtelescope/54764951141/">https://www.flickr.com/photos/nasawebbtelescope/54764951141/</a></p>
             <p>Meteor from <a href="https://www.freepik.com/free-vector/burning-fireball-galaxy_136488418.htm">Freepik</a></p>

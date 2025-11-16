@@ -1,4 +1,4 @@
-@import url(/all.css);
+@import url(./all.css);
 /* 
 #list-container{
     height:80px;
@@ -21,24 +21,24 @@
 
 .list-item{
     font-size: 32px;
-    transition: 300ms;
     width:300px;
     height:64px;
     /* margin-left:50px; */
     margin-top:16px;
     margin-bottom:16px;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     display:flex;
     align-items: center;
     justify-content: center;
     /* align-self: center; */
 }
 
-.list-item:hover{
+.list-item > a{
+    transition: font-size 300ms;
+}
+
+.list-item > a:hover{
     font-size: 48px;
-    /* margin-bottom:0; */
-    /* margin-top:0;
-    /* background-color: red; */
 }
 
 .about-conatiner{
@@ -55,6 +55,8 @@
     display: flex;
     margin:0 auto;
     justify-content:center;
+    align-items: center;
+    gap: 10%;
 }
 
 #myImage{
@@ -62,14 +64,17 @@
 }
 
 #face-container{
+    height:210px;
+    width:210px;
     border-radius: 50%;
     overflow: hidden;
     /* margin: -30px 0 -30px 0; */
 }
 
 #main-links{
-    margin-left:30px;
-    min-width: fit-content;
+    /* margin-left:30px; */
+    /* min-width: fit-content; */
+    height: fit-content;
 }
 
 .link-button-container{
@@ -92,21 +97,23 @@
     height: fit-content;
     display: flex;
     align-items: center;
+    box-shadow: 10px 10px 0 0 #0008;
     /* position:relative */
 }
 
 .link-button-container:hover > .link-button{
     border-bottom-width: 5px;
+    box-shadow: 5px 5px 0 0 #0008;
 }
 
-#photos{
+.photos{
     display:flex;
     flex-wrap: wrap;
     gap:10px;
     justify-content: center;
 }
 
-#photos > img{
+.photos > img{
     height:300px;
     border-radius: 30px;
     border:#555 solid 10px;
@@ -116,6 +123,10 @@
     max-width: 300px;
     margin-left: 200px;
     transform: scaleX(-1);
+}
+
+#projects{
+    font-size: 40px;
 }
 
 .project-container{
@@ -170,9 +181,19 @@
     object-fit: contain;
 }
 
+.dog-container{
+    background-color: #222;
+    border-radius: 40px;
+    border: 5px solid gray;
+    padding: 10px;
+    width:fit-content;
+    margin:30px;
+    font-size: 20px;
+}
+
 h1{
     text-align: center;
-    font-size:50px;
+    font-size:64px;
 }
 
 h2{
