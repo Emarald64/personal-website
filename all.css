@@ -43,6 +43,7 @@ footer{
     flex-direction: row;
     align-items: center;
     gap:1ch;
+    cursor:pointer;
 }
 
 .contact-container{
