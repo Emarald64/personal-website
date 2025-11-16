@@ -187,6 +187,14 @@
     position: relative;
     max-width:800px;
     max-height:fit-content;
+    transition-duration: 100ms;
+    box-shadow: 5px 5px 0 0 #0008;
+}
+
+.project-box:hover{
+    scale:1.15;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 10px #0008;
 }
 
 .project-description{
