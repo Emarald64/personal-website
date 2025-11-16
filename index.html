@@ -4,8 +4,47 @@
         <link rel="stylesheet" href="./style.css">
         <title>Alexander Giller</title>
         <link rel="icon" type="image/x-icon" href="./assets/laugh.png">
+        <script>
+            var animationInterval
+            var time=0
+            var downTime=400
+            function animate(){
+                time++
+                if (time>=downTime+50){
+                    time=0
+                    clearInterval(animationInterval)
+                    console.log('ended anim')
+                }
+                else if(time<35){
+                    document.getElementById('copyNotif').style.bottom=String(time-35)+'px'
+                    console.log(document.getElementById('copyNotif').style.bottom)
+                }else if(time>downTime){
+                    document.getElementById('copyNotif').style.bottom=String((downTime-time)*0.7)+'px'
+                }
+                
+            }
+
+            function copyEmail(){
+                navigator.clipboard.writeText('alexgiller@proton.me')
+
+                if (time==0){
+                    console.log('starting new anin')
+                    animationInterval=setInterval(animate,10)
+                }else{
+                    
+                    console.log('resetting existing anin')
+                    downTime=time+400
+                    document.getElementById('copyNotif').style.bottom=0
+                }
+            }
+        </script>
     </head>
     <body>
+
+        <div id="copyNotif">
+            📋 Email Copied
+        </div>
+
         <picture>
             <source srcset="./assets/space.avif" type="imgae/avif">
             <source srcset="./assets/space.webp" type="image/webp">
@@ -35,7 +74,6 @@
                             </dev>
                         </div>
                     </a>
-                    <br>
                     <a href="https://github.com/Emarald64">
                         <div class="link-button-container">
                             <dev class="link-button">
@@ -44,6 +82,12 @@
                             </dev>
                         </div>
                     </a>
+                    <div class="link-button-container" onclick="copyEmail()">
+                        <dev class="link-button">
+                            <img class="linkIcon" src="./assets/email.svg"> 
+                            Copy Email
+                        </dev>
+                    </div>
                 </div>
             </div>
     
@@ -152,12 +196,10 @@
         <footer>
             <div class="contact-container">
                 <span>Contact:</span>
-                <a href=" mailto:alexgiller@proton.me">
-                    <div class="email-button">
-                        <img src="./assets/email.svg">
-                        <span>alexgiller@proton.me</span>
-                    </div>
-                </a>
+                <div class="email-button" onclick="copyEmail()">
+                    <img src="./assets/email.svg">
+                    <span>alexgiller@proton.me</span>
+                </div>
             </div>
             <p>Space background from <a href="https://www.flickr.com/photos/nasawebbtelescope/54764951141/">https://www.flickr.com/photos/nasawebbtelescope/54764951141/</a></p>
             <p>Meteor from <a href="https://www.freepik.com/free-vector/burning-fireball-galaxy_136488418.htm">Freepik</a></p>
