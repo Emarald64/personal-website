@@ -12,8 +12,8 @@
                 time++
                 if (time>=downTime+50){
                     time=0
+                    document.getElementById('copyNotif').style.bottom=''
                     clearInterval(animationInterval)
-                    // console.log('ended anim')
                 }
                 else if(time<35){
                     document.getElementById('copyNotif').style.bottom=String(time-35)+'px'
