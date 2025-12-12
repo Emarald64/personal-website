@@ -19,11 +19,10 @@
     position:fixed;
     bottom: -35px;
     left:50%;
-    right:50%;
     width:fit-content;
 
     text-wrap: nowrap;
-
+    margin-left:-57px
     
 }
 
