@@ -168,7 +168,7 @@
 .project-container{
     display:flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap: 15px 5px;
     margin-left:20px;
     justify-content: center;
 }
@@ -194,6 +194,7 @@
     scale:1.15;
     z-index: 1;
     box-shadow: 5px 5px 5px 10px #0008;
+    transform: translateY(-5px);
 }
 
 .project-description{
